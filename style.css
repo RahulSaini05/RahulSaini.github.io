@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.profile{
+    background: url(img/background.jpg);
+    /* background: #fff; */
+}
+.profile .content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.profile .content .text{
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(240, 238, 238);
+    border-radius: 20px;
+    box-shadow: 0 5px 35px rgb(0, 0, 0, 0.08) ;
+}
+.profile .content .text h1{
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: 800;
+    color: #08080888;
+}
+.profile .content  .cover{
+    display: flex;
+    position: relative;
+    width: 60%;
+}
+.profile .content  .cover .cover_img{
+    position: relative;
+    width: 100%;
+    height: 480px;
+}
+.profile .content  .cover .cover_img  img{
+    position: relative;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 35px rgba(14, 1, 1, 0.08);
+    object-fit: cover;
+}
+.profile .content  .profile1{
+    display: flex;
+    flex-wrap: wrap; 
+    position:relative;
+    width: 320px;
+    justify-content: center;
+    border-radius: 50%;
+    top: -80px;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 35px rgb(14, 1, 1, 0.08);
+}
+.profile .content  .profile1 .profile_img{
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
+    height: 300px;
+}
+.profile .content  .profile1 .profile_img img{
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile .content .name{
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    top: -50px;
+    margin: 10px ;
+    box-shadow: 0 5px 35px rgb(0, 0, 0, 0.08);
+}
+.profile .content .name h2{
+    font-size: 2em;
+    color: #9067f1;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.detail{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    padding: 20px;
+}
+.detail .information{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 400px;
+}
+.detail .information .heading{
+    text-transform: uppercase;
+    padding: 2px ;
+    margin-bottom: 5px;
+    width: 100% ;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 35px rgb(0, 0, 0, 0.08);
+}
+.detail .information .heading h2{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    color: #ff0157;
+}
+.detail .information .row{
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 35px rgb(0, 0, 0, 0.08);
+    padding: 10px;
+    height: 200px;
+}
+.detail .information .row .text1{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: 50px;
+}
+.detail .information .row .text1 span{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: x-large;
+}
+
+@media (max-width : 999px){
+    .detail .information .heading{
+        margin-top: 20px;
+    }
+
+    .detail .information .row{
+        height: 250px;
+    }
+    .detail .information .row .text1{
+        height: 60px;
+    }
+    .profile .content  .cover{
+        width: 100%;
+        padding: 10px;
+    }
+    .profile .content  .cover .cover_img{
+        height: 200px;
+    }
+    .profile .content  .profile1{
+        width: 220px;
+        top: -60px;
+    }
+    .profile .content  .profile1 .profile_img{
+        height: 200px;
+    }
+}
